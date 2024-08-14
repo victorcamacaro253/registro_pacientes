@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="vanilla-dataTables.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <script type="text/javascript" src="funciones2.js"></script>
+	<link rel="shortcut icon" href="imagenes/consultorio.png" type="image/x-icon">
+
     <style type="text/css">
 		.container{
 			margin-top: 6em;
