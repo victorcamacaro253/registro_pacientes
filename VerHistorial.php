@@ -23,7 +23,7 @@
 			
 		}
 	</style>
-    <title>Document</title>
+    <title>Ver historial de consultas</title>
 </head>
 <body>
 <?php include_once ("header.php"); ?>
