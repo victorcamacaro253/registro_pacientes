@@ -15,7 +15,8 @@
 	<script type="text/javascript" src="vanilla-dataTables.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="vanilla-dataTables.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	
+	<link rel="shortcut icon" href="imagenes/consultorio.png" type="image/x-icon">
+
 	<style type="text/css">
 		.container{
 			margin-top: 6em;
@@ -26,6 +27,11 @@
 	
 </head>
 <body  style="background-color:white">
+
+
+    
+<?php include_once ("header.php"); ?>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12  col-sm-8 col-sm-4">
@@ -41,6 +47,10 @@
 								<section class="text-right">
 									<span class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalinsertar">
 									<i class="fa fa-plus-circle"></i> Agregar nuevo paciente
+								</span>
+
+								<span class="btn btn-success btn-sm " id="historial">
+									<i class="fa fa-plus-circle"></i> Ver historial de las consultas
 								</span>
 								</section>
 								<div id="tablaDatos"></div>
@@ -151,6 +161,14 @@
   		mostrarDatos();
   	})
 
+	  // Selecciona el elemento con el ID 'historial'
+	  const viewHistoryBtn = document.getElementById('historial');
+
+// Agrega un event listener al botón
+viewHistoryBtn.addEventListener('click', function() {
+	// Redirige a la página deseada
+	window.location.href = 'VerHistorial.php';
+});
 
   </script>
 
